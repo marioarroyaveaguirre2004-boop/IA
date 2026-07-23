@@ -35,10 +35,7 @@ Conocido Sí, Las reglas de funcionamiento del modelo son conocidas por el usuar
 
 5. ¿Qué tipo de programa de agente creen que es?
 
-El agente sigue el reflejo simple
-
-6. 
-
+Es de reflejo simple porque toma el prompt actual y la directamente genera la imagen, sin usar historial ni estado interno, ya que el entorno es episódico. No construye nada mas allá de lo que se le pide,simplemente aplica una función fija entrada→salida. 
 
 
 
