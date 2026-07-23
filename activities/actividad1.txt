@@ -4,5 +4,21 @@ Nombre: Image Studio
 
 Enlace: https://huggingface.co/spaces/nsfwalex/ImageStudio
 
+2. ¿Qué hace el agente?
+
+El agente a partir de un prompt, genera una imagen con un formato ya sea realista o en formato anime. 
+
+3. Análisis PEAS
+
+P: La imagen generada es fiel con el prompt, ademas debe ser bastante agradable a la vista o seguir los lineamentos opcionales de configuración.
+
+E: La interfaz, el chat de prompts, las configuraciones avanzados, el boton de opción de formatos.
+
+A: El botón para empezar a generar y el motor de generación.
+
+S: El sensor de formatos y el chat de prompts. 
+
+
+4. Clasificación del entorno
 
 
