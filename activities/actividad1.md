@@ -44,13 +44,15 @@ Encuentre un Space que pueda clasificarse como:
 
 Totalmente observable: el agente recibe la imagen completa que sube el usuario; no hay información adicional relevante para la tarea.
 
-Determinista: el modelo de segmentación (U²-Net/rembg) no usa muestreo aleatorio en inferencia; la misma imagen de entrada produce siempre la misma máscara y el mismo resultado de salida.
+Determinista: el modelo de no usa muestreo aleatorio; la misma imagen de entrada produce siempre el mismo resultado de salida.
 
-Episódico → cada imagen se procesa de forma independiente; el resultado de una imagen no depende de imágenes procesadas antes ni afecta a las siguientes (no hay memoria entre solicitudes).
+Episódico: cada imagen se procesa de forma independiente.
 
 **Parcialmente observable, estocástico y secuencial** https://huggingface.co/spaces/HuggingFaceH4/zephyr-chat
 
-Parcialmente observable → el agente solo "ve" el texto que el usuario escribe; no tiene acceso a la intención real, el conocimiento previo o el estado mental completo del usuario, solo una representación parcial (los mensajes).
-Estocástico → el modelo genera texto por muestreo (temperature, top-p), por lo que el mismo mensaje puede producir respuestas distintas en cada ejecución.
-Secuencial → cada respuesta depende del historial completo de la conversación (turnos anteriores), y las acciones actuales del agente condicionan cómo debe responder en turnos futuros; no es un episodio aislado como en el caso anterior.
+Parcialmente observable: el agente solo usa el texto que el usuario escribe.
+
+Estocástico: el modelo genera texto por muestreo, por lo que el mismo mensaje puede producir respuestas distintas en cada ejecución.
+
+Secuencial: cada respuesta depende del historial completo de la conversación, y las acciones actuales del agente condicionan cómo debe responder en turnos futuros.
 
